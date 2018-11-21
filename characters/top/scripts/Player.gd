@@ -1,12 +1,14 @@
-extends KinematicBody2D
+extends "res://characters/scripts/PlayerMain.gd"
 
-var hp = 50
-var max_hp = 50
-var speed = 100
-
-
+func _init():
+	hp = 50
+	max_hp = 50
+	speed = 100
+	
 func _ready():
 	pass
+	
+
 
 func _physics_process(delta):
 	
@@ -19,24 +21,6 @@ func _physics_process(delta):
 	elif Input.is_key_pressed(KEY_A) || Input.is_key_pressed(KEY_LEFT):
 		move_and_slide(Vector2(-speed,0))
 	
-	pass
-
-func set_hp(hitpoints):
-	hp = hitpoints
-	if hp <= 0:
-		die()
-	pass
-
-func take_damage(damage):
-	set_hp(hp - damage)
-	pass
-
-func set_max_hp(hitpoints):
-	max_hp = hitpoints
-	pass
-
-func set_max_speed(s):
-	speed = s
 	pass
 
 func die():
