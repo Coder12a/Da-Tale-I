@@ -12,11 +12,11 @@ func _physics_process(delta):
 	
 	if Input.is_key_pressed(KEY_W) || Input.is_key_pressed(KEY_UP):
 		move_and_slide(Vector2(0,-speed))
-	if Input.is_key_pressed(KEY_S) || Input.is_key_pressed(KEY_DOWN):
+	elif Input.is_key_pressed(KEY_S) || Input.is_key_pressed(KEY_DOWN):
 		move_and_slide(Vector2(0,speed))
-	if Input.is_key_pressed(KEY_D) || Input.is_key_pressed(KEY_RIGHT):
+	elif Input.is_key_pressed(KEY_D) || Input.is_key_pressed(KEY_RIGHT):
 		move_and_slide(Vector2(speed,0))
-	if Input.is_key_pressed(KEY_A) || Input.is_key_pressed(KEY_LEFT):
+	elif Input.is_key_pressed(KEY_A) || Input.is_key_pressed(KEY_LEFT):
 		move_and_slide(Vector2(-speed,0))
 	
 	pass
