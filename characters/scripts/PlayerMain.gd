@@ -16,6 +16,12 @@ var speed = 0
 var fp = 0
 # Max force points.
 var max_fp = 0
+# Ladrahasla Stamina
+var MP = 0
+# Maximum Ladrahasla Stamina
+var max_MP = 0
+# Lahrahasla Skillset
+var skillset = 0
 # Empty array of items.
 var items = []
 # Movement states of this character.

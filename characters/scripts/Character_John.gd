@@ -9,5 +9,8 @@ func _init():
 	speed = 100
 	fp = 0
 	max_fp = 0
+	MP = 2
+	max_MP = 8
+	skillset = []
 	items = ["sunglass","Ice Cubes"]
 	Die_msg = "John the penguin died."
