@@ -12,5 +12,5 @@ func _init():
 	MP = 2
 	max_MP = 8
 	skillset = []
-	items = ["sunglass","Ice Cubes"]
+	items = [("sunglass", 1), ("Ice Cubes", 1)]
 	Die_msg = "John the penguin died."
