@@ -10,6 +10,6 @@ func _init():
 	max_fp = 0
 	MP = 36
 	max_MP = 64
-	skillset = ["blade", "shield", "lightening", "mind sweep", "navigator"]
+	skillset = ["blade", "shield", "lightning", "mind sweep", "navigator"]
 	items = ["Tea_Brewing_Rod"]
-	Die_msg = "The old Tea Farmer, has died."
+	Die_msg = "The old Tea Farmer has died."
