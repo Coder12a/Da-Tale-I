@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Da Tale I"
-run/main_scene="res://Label.tscn"
+run/main_scene="res://characters/top/tscn/Player.tscn"
 config/icon="res://icon.png"
 
 [display]

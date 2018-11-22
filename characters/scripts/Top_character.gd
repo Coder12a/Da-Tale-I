@@ -1,5 +1,9 @@
 extends KinematicBody2D
 
+# The character's name.
+var character_name = ""
+# The character's description.
+var character_description = ""
 # Current health points.
 var hp = 0
 # Max health points.
@@ -14,17 +18,16 @@ var max_fp = 0
 var items = []
 # Movement states of this character.
 # none, left, up, right, down
-var movement_states = "none"
+var movement_state = "none"
 
 # On death message.
 var Die_msg = "ded"
 
-func _ready():
-	pass
-
 func update_movement(delta):
+	# set state to none
+	movement_state = "none"
 	# check which state the character is in.
-	match [movement_states]:
+	match movement_state:
 		"left":
 			move_and_slide(Vector2(-speed,0))
 		"up":
@@ -33,25 +36,20 @@ func update_movement(delta):
 			move_and_slide(Vector2(speed,0))
 		"down":
 			move_and_slide(Vector2(0,speed))
-	pass
 
 func set_hp(hitpoints):
 	hp = hitpoints
 	if hp <= 0:
 		die()
-	pass
 
 func take_damage(damage):
 	set_hp(hp - damage)
-	pass
 
 func set_max_hp(hitpoints):
 	max_hp = hitpoints
-	pass
 
 func set_max_speed(s):
 	speed = s
-	pass
 
 func die():
 	print(Die_msg)
