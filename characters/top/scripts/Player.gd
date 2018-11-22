@@ -14,5 +14,5 @@ func _physics_process(delta):
 		movement_state = "right"
 	elif Input.is_key_pressed(KEY_A) || Input.is_key_pressed(KEY_LEFT):
 		movement_state = "left"
-	# call based func update_movement
+	# call base func update_movement
 	.update_movement(delta)
