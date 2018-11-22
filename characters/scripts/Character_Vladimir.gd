@@ -10,4 +10,4 @@ func _init():
 	fp = 0
 	max_fp = 0
 	items = []
-	Die_msg = "Vladimir Grabinski died."
+	Die_msg = "Vladimir Grabinski was turned into a bear rug."

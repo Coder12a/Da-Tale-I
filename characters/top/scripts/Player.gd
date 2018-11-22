@@ -1,8 +1,24 @@
 extends "res://characters/scripts/Top_character.gd"
 
-func _init():
-	party.join_party("Vladimir")
-	party.join_party("John")
+# Store a reference to the main node.
+var main_ref = null
+# Store a reference to the playfield node.
+var playfield_ref = null
+# Store a reference to the hud node.
+var hud_ref = null
+# Store a reference to the dialogbox node.
+var hud_dialogbox_ref = null
+# Store a reference to the DialogText node.
+var hud_DialogText_ref = null
+
+func _ready():
+	var main_ref = get_tree().get_root().get_node("Main")
+	var playfield_ref = main_ref.get_node("PlayField")
+	var hud_ref = main_ref.get_node("Hud")
+	var hud_dialogbox_ref = hud_ref.get_node("DialogBox")
+	var hud_DialogText_ref = hud_dialogbox_ref.get_node("DialogText")
+	party.join_party(hud_DialogText_ref,"Vladimir")
+	party.join_party(hud_DialogText_ref,"John")
 	# always update leader stats when you change a party member.
 	.update_leader_stats()
 

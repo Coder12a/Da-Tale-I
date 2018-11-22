@@ -4,7 +4,7 @@ var class_data = load("res://characters/scripts/PartyList.gd")
 var party = class_data.new()
 
 func update_leader_stats():
-	# There should be a character stats class so we don't have to match all those below.
+	# There should be a character stats class so we don't have to match all these below.
 	var player = party.head_of_the_party
 	class_name = player.class_name
 	character_name = player.character_name
