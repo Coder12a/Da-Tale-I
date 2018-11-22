@@ -1,4 +1,4 @@
-extends "res://characters/scripts/Top_character.gd"
+extends "res://characters/top/scripts/Top_character.gd"
 
 func _init():
 	party.join_party("Vladimir")
