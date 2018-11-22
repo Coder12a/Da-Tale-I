@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+# The character's class name.
+var class_name = ""
 # The character's name.
 var character_name = ""
 # The character's description.

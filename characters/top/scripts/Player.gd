@@ -1,9 +1,10 @@
 extends "res://characters/scripts/Top_character.gd"
 
 func _init():
-	hp = 50
-	max_hp = 50
-	speed = 100
+	party.join_party("Vladimir")
+	party.join_party("John")
+	# always update leader stats when you change a party member.
+	.update_leader_stats()
 
 func _physics_process(delta):
 	if Input.is_key_pressed(KEY_W) || Input.is_key_pressed(KEY_UP):
