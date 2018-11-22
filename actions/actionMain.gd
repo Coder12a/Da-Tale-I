@@ -6,3 +6,6 @@ func _ready():
 	
 func action():
 	print("Something happened")
+	
+func _on_button_pressed():
+	action()
