@@ -12,6 +12,8 @@ script = ExtResource( 1 )
 
 [node name="Player" parent="PlayField" index="0" instance=ExtResource( 2 )]
 
+position = Vector2( 516.771, 324.932 )
+
 [node name="Hud" type="Node" parent="." index="1"]
 
 [node name="DialogBox" parent="Hud" index="0" instance=ExtResource( 3 )]
