@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Overworld.gd" type="Script" id=1]
+[ext_resource path="res://OverWorld.gd" type="Script" id=1]
 [ext_resource path="res://characters/top/tscn/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://menus/tscn/DialogBox.tscn" type="PackedScene" id=3]
 
@@ -17,7 +17,5 @@ position = Vector2( 516.771, 324.932 )
 [node name="Hud" type="Node" parent="." index="1"]
 
 [node name="DialogBox" parent="Hud" index="0" instance=ExtResource( 3 )]
-
-position = Vector2( 0, -240 )
 
 
