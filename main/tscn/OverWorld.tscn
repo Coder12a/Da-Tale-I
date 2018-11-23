@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://OverWorld.gd" type="Script" id=1]
+[ext_resource path="res://main/scripts/OverWorld.gd" type="Script" id=1]
 [ext_resource path="res://characters/top/tscn/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://menus/tscn/DialogBox.tscn" type="PackedScene" id=3]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" index="0"]
 
 script = ExtResource( 1 )
 

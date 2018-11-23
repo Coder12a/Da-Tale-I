@@ -1,9 +1,0 @@
-[gd_scene format=2]
-
-[node name="Main" type="Node"]
-
-[node name="PlayField" type="Node" parent="." index="0"]
-
-[node name="Hud" type="Node" parent="." index="1"]
-
-
