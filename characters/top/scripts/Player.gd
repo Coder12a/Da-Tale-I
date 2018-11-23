@@ -1,4 +1,4 @@
-extends "res://characters/scripts/Top_character.gd"
+extends "res://characters/top/scripts/Top_character.gd"
 
 # Store a reference to the main node.
 var main_ref = null
