@@ -4,7 +4,7 @@
 [ext_resource path="res://characters/top/tscn/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://menus/tscn/DialogBox.tscn" type="PackedScene" id=3]
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -17,5 +17,7 @@ position = Vector2( 516.771, 324.932 )
 [node name="Hud" type="Node" parent="." index="1"]
 
 [node name="DialogBox" parent="Hud" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -240 )
 
 

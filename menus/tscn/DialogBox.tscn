@@ -14,7 +14,7 @@ distance_field = false
 [node name="DialogBox" type="Polygon2D" index="0"]
 
 pause_mode = 2
-position = Vector2( 0, 230.4 )
+position = Vector2( 0, -240 )
 scale = Vector2( 1, 0.6 )
 polygon = PoolVector2Array( 1008, 576, 16, 576, 16, 416, 1008, 416 )
 uv = PoolVector2Array(  )
