@@ -10,6 +10,6 @@ func _init():
 	max_fp = 0
 	MP = 40
 	max_MP = 40
-	skillset = [("blade", 1), ("shield", 1)]
-	items = [("Mese_Crystalis", 1)]
+	skillset = {"blade":1, "shield":1}
+	items = {"Mese_Crystalis": 1}
 	Die_msg = "In a cloud of dust, the Coffee Farmer finally goes down."

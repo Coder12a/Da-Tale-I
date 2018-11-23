@@ -11,5 +11,5 @@ func _init():
 	max_fp = 0
 	MP = 0
 	max_MP = 5
-	items = []
+	items = {}
 	Die_msg = "Vladimir Grabinski was turned into a bear rug."

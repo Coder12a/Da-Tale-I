@@ -11,7 +11,6 @@ func _init():
 	max_fp = 0
 	MP = 2
 	max_MP = 8
-	skillset = []
-	items = [("sunglass", 1), ("Ice Cubes", 1)]
+	skillset = {}
+	items = {"sunglass": 1, "Ice Cubes": 1}
 	Die_msg = "John the Penguin was put back on ice."
->>>>>>> daf5e49f4380dabf8339a82c7904301a8efa2972

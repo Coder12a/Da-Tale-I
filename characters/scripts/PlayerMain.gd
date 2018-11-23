@@ -21,9 +21,9 @@ var MP = 0
 # Maximum Ladrahasla Stamina
 var max_MP = 0
 # Lahrahasla Skillset
-var skillset = 0
+var skillset = {}
 # Empty array of items.
-var items = []
+var items = {}
 # Movement states of this character.
 # none, left, up, right, down
 var movement_state = "none"
