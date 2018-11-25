@@ -3,7 +3,7 @@
 [ext_resource path="res://characters/top/scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 position = Vector2( 520.771, 291.932 )
 input_pickable = false

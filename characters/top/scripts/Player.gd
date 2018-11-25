@@ -8,19 +8,13 @@ var playfield_ref = null
 var hud_ref = null
 # Store a reference to the dialogbox node.
 var hud_dialogbox_ref = null
-# Store a reference to the DialogText node.
-var hud_DialogText_ref = null
 
 func _ready():
-	var main_ref = get_tree().get_root().get_node("Main")
-	var playfield_ref = main_ref.get_node("PlayField")
-	var hud_ref = main_ref.get_node("Hud")
-	var hud_dialogbox_ref = hud_ref.get_node("DialogBox")
-	var hud_DialogText_ref = hud_dialogbox_ref.get_node("DialogText")
-	party.join_party(hud_DialogText_ref,"Vladimir")
-	party.join_party(hud_DialogText_ref,"John")
-	# always update leader stats when you change a party member.
-	.update_leader_stats()
+	# Store a references for later used.
+	main_ref = get_tree().get_root().get_node("Main")
+	playfield_ref = main_ref.get_node("PlayField")
+	hud_ref = main_ref.get_node("Hud")
+	hud_dialogbox_ref = hud_ref.get_node("DialogBox")
 
 func _physics_process(delta):
 	if Input.is_key_pressed(KEY_W) || Input.is_key_pressed(KEY_UP):

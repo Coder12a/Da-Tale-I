@@ -11,7 +11,8 @@ func join_party(dialogBox,classname):
 	
 	# formated the joined party message.
 	print("%s joined your party!" % pm.character_name)
-	dialogBox.add_dialog("%s joined your party!" % pm.character_name)
+	if dialogBox != null:
+		dialogBox.add_dialog("%s joined your party!" % pm.character_name)
 	party.append(pm)
 	
 	# Set the leader of the party.
@@ -21,7 +22,8 @@ func join_party(dialogBox,classname):
 
 func join_party_instance(dialogBox,instance):
 	print("%s joined your party!" % instance.character_name)
-	dialogBox.add_dialog("%s joined your party!" % instance.character_name)
+	if dialogBox != null:
+		dialogBox.add_dialog("%s joined your party!" % instance.character_name)
 	party.append(instance)
 	if head_of_the_party == null:
 		head_of_the_party = party[0]
