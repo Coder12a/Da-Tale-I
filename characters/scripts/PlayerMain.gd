@@ -24,9 +24,12 @@ var max_MP = 0
 var skillset = {}
 # Empty array of items.
 var items = {}
-# Movement states of this character.
+# Movement state of this character.
 # none, left, up, right, down
 var movement_state = "none"
+# direction state of this character.
+# none, left, up, right, down
+var direction_state = "none"
 
 # On death message.
 var Die_msg = "ded"
