@@ -25,7 +25,7 @@ var skillset = {}
 # Empty array of items.
 var items = {}
 # Movement state of this character.
-# none, left, up, right, down
+# none, walking
 var movement_state = "none"
 # direction state of this character.
 # none, left, up, right, down
