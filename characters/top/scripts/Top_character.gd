@@ -16,6 +16,8 @@ func update_leader_stats():
 	max_fp = player.max_fp
 	items = player.items
 	Die_msg = player.Die_msg
+	top_sheet = player.top_sheet
+	side_sheet = player.side_sheet
 
 func update_movement(delta):
 	# check which state the character is in.

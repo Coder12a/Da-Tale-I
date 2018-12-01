@@ -14,5 +14,6 @@ func _ready():
 	hud_ref = get_node("Hud")
 	hud_dialogbox_ref = hud_ref.get_node("DialogBox")
 	player_ref = playfield_ref.get_node("Player")
-	player_ref.party.join_party(hud_dialogbox_ref,"John")
+	player_ref.party.join_party(null,"Vladimir")
 	player_ref.update_leader_stats()
+	player_ref.load_sprite_sheet()

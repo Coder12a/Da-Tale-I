@@ -31,6 +31,10 @@ var movement_state = "none"
 # On death message.
 var Die_msg = "ded"
 
+var top_sheet = null
+
+var side_sheet = null
+
 func set_hp(hitpoints):
 	hp = hitpoints
 	if hp <= 0:

@@ -12,4 +12,5 @@ func _init():
 	MP = 0
 	max_MP = 5
 	items = {}
+	top_sheet = "res://characters/top/gfx/Vladimir_Sheet.png"
 	Die_msg = "Vladimir Grabinski was turned into a bear rug."
